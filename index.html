@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место</title>
+</head>
+<body class="page">
+  <header class="header">
+    <img src="./images/logo.svg" class="header__logo" alt="Логотип">
+  </header>
+  <main class="container">
+    <section class="profile">
+        <img alt="Аватар профиля" src="./images/avatar.jpg" class="profile__avatar">
+          <div class="profile__info">
+            <h1 class="profile__title">Жак-Ив Кусто</h1>
+            <button class="profile__edit" type="button"></button>
+          </div>
+          <p class="profile__subtitle">Исследователь океана</p>
+          <button class="profile__add-button" type="button"></button>
+    </section>
+    <section class="cards">
+      <div class="cards__item">
+        <img class="cards__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
+        <div class="cards__caption">
+          <h2 class="cards__text">Карачаевск</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+      <div class="cards__item">
+        <img class="cards__photo" src="./images/goraelbrus.jpg" alt="Эльбрус">
+        <div class="cards__caption">
+          <h2 class="cards__text">Гора Эльбрус</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+      <div class="cards__item">
+        <img class="cards__photo" src="./images/dombai.jpg" alt="Донбай">
+        <div class="cards__caption">
+          <h2 class="cards__text">Донбай</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+      <div class="cards__item">
+        <img class="cards__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
+        <div class="cards__caption">
+          <h2 class="cards__text">Карачаевск</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+      <div class="cards__item">
+        <img class="cards__photo" src="./images/goraelbrus.jpg" alt="Эльбрус">
+        <div class="cards__caption">
+          <h2 class="cards__text">Гора Эльбрус</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+      <div class="cards__item">
+        <img class="cardts__photo" src="./images/dombai.jpg" alt="Донбай">
+        <div class="cards__caption">
+          <h2 class="cards__text">Донбай</h2>
+          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+        </div>
+      </div>
+    </section>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="form">
+          <input type="text" class="popup__inputs popup__inputs_type_name" placeholder="" name="name">
+          <input type="text" class="popup__inputs popup__inputs_type_hobby" placeholder="" name="hobby">
+          <button class="popup__button" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">© 2020 Mesto Russia</p>
+  </footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
