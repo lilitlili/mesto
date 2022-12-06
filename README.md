@@ -9,4 +9,4 @@
 
 ## Контакты:
 E-mail: lilitkhalatian@yandex.ru
-ссылка проекта: [https://lilitlili.github.io/russian-travel/index.html]
+ссылка проекта: [lilitlili.github.io/mesto/]
