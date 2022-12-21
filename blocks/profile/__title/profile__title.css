@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: 590px) {
+@media (min-width: 690px) {
   .profile__title {
    max-width: 350px;
   }
