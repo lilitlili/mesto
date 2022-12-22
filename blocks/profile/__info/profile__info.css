@@ -1,10 +1,9 @@
 .profile__info {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 18px;
   margin: 0;
-  padding-top: 26px;
-  padding-bottom: 14px;
+  padding: 21px 10px 0;
   grid-area: name;
 }
 
@@ -12,16 +11,17 @@
   .profile__info {
     justify-self: center;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
 @media (max-width: 650px) {
   .profile__info {
-    padding-left: 10px;
-    padding-top: 20px;
     gap: 12px;
     align-self: baseline;
     justify-self: start;
+    padding-top: 26px;
+    padding-left: 26px;
   }
 }
 

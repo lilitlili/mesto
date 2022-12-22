@@ -10,6 +10,8 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 220px;
+  padding-left: 10px;
+  padding-bottom: 21px;
 }
 
 @media (min-width: 550px) {
@@ -22,18 +24,29 @@
    margin-top: 0;
    margin-bottom: 21px;
    max-width: 300px;
+   
   }
 }
 
 @media (min-width: 590px) {
   .profile__subtitle {
    max-width: 350px;
+  
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 751px) {
   .profile__subtitle {
    justify-self: start;
    margin: 0;
+   
+  }
+}
+
+@media (max-width: 400px) {
+  .profile__subtitle {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 6px;
   }
 }
