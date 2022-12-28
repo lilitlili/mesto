@@ -21,59 +21,45 @@
           <p class="profile__subtitle">Исследователь океана</p>
           <button class="profile__add-button" type="button"></button>
     </section>
-    <section class="cards">
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
-        <div class="cards__caption">
-          <h2 class="cards__text">Карачаевск</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
+    <section class="profile-content">
+      <template id="template">
+        <div class="place-card">
+          <img src="./images/karachaevsk.jpg" alt="фотография города Карачаевск" class="place-card__image">
+          <button class="place-card__buttons-delete" type="button"></button>
+          <div class="place-card__container">
+            <h2 class="place-card__subtitle">Карачаевск</h2>
+            <button class="place-card__buttons-like" type="button"></button>
+          </div>
         </div>
-      </div>
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/goraelbrus.jpg" alt="Эльбрус">
-        <div class="cards__caption">
-          <h2 class="cards__text">Гора Эльбрус</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
-        </div>
-      </div>
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/dombai.jpg" alt="Донбай">
-        <div class="cards__caption">
-          <h2 class="cards__text">Домбай</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
-        </div>
-      </div>
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
-        <div class="cards__caption">
-          <h2 class="cards__text">Карачаевск</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
-        </div>
-      </div>
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/goraelbrus.jpg" alt="Эльбрус">
-        <div class="cards__caption">
-          <h2 class="cards__text">Гора Эльбрус</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
-        </div>
-      </div>
-      <div class="cards__item">
-        <img class="cards__photo" src="./images/dombai.jpg" alt="Донбай">
-        <div class="cards__caption">
-          <h2 class="cards__text">Домбай</h2>
-          <button class="cards__like cards__like_active" type="button" aria-label="Кнопка нравится"></button>
-        </div>
-      </div>
+      </template>
     </section>
-    <div class="popup">
+    <div class="popup" id="popup_edit-profile">
       <div class="popup__container">
         <button class="popup__close" type="button"></button>
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" name="form">
-          <input type="text" class="popup__inputs popup__inputs_type_name" placeholder="" name="name">
-          <input type="text" class="popup__inputs popup__inputs_type_hobby" placeholder="" name="hobby">
-          <button class="popup__button" type="submit">Сохранить</button>
+          <input type="text" class="popup__inputs popup__inputs_type_name" name="name">
+          <input type="text" class="popup__inputs popup__inputs_type_hobby" name="hobby">
+          <button class="popup__save" type="submit">Сохранить</button>
         </form>
+      </div>
+    </div>
+    <div class="popup" id="popup_add-card">
+      <div class="popup__container">
+        <button class="popup__close" type="button"></button>
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="form">
+          <input type="text" class="popup__inputs popup__inputs_type_name" placeholder="Название" name="name">
+          <input type="text" class="popup__inputs popup__inputs_type_hobby" placeholder="Ссылка на картинку" name="hobby">
+          <button class="popup__save" type="submit">Создать</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup-image">
+      <div class="popup-image__container">
+        <button class="popup-image__buttons-close" type="button"></button>
+        <img src="./images/karachaevsk.jpg" alt="фотография города Карачаевск" class="popup-image__image">
+        <h2 class="popup-image__subtitle">гора Эльбрус</h2>
       </div>
     </div>
   </main>
