@@ -1,4 +1,4 @@
-.popup-image__subtitle {
+.popup__subtitle {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
@@ -10,7 +10,7 @@
   }
   
   @media (min-width: 450px) {
-    .popup-image__subtitle {
+    .popup__subtitle {
       max-width: 291px;
     }
   }
