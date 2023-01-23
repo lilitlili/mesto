@@ -19,6 +19,7 @@
     padding: 34px 36px 36px;
   }
 }
-.popup__container-image {
+
+.popup__container-image{
   position: relative;
 }
