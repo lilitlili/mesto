@@ -70,7 +70,9 @@ popupButtonCloseCard.addEventListener('click', () => {
 popupFormAdd.addEventListener('submit', (evt) => {
   evt.preventDefault();
   console.log(inputNameAdd.value);
-  createCard(inputHobbyAdd.value, inputNameAdd.value);
+  if (inputNameAdd.value) {
+    cardContainer.prepend(createCard(inputHobbyAdd.value, inputNameAdd.value));
+  }
   inputHobbyAdd.value = '';
   inputNameAdd.value = '';
   closePopup(popupAddCard);
